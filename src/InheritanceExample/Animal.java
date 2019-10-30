@@ -6,11 +6,11 @@ public class Animal {
     private int weight;
     private int size;
 
-    public Animal(String name, int age, int weight, int size) {
-        this.name = name;
-        this.age = age;
-        this.weight = weight;
-        this.size = size;
+    public Animal(String name1, int age1, int weight1, int size1) {
+        name = name1;
+        age = age1;
+        weight = weight1;
+        size = size1;
     }
     public void eat() {
         System.out.println("Animal.eat Class");

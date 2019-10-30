@@ -15,5 +15,20 @@ public class Dog extends Animal {
         this.teeth = teeth;
     }
 
+    public int getEyes() {
+        return eyes;
+    }
+
+    public int getLegs() {
+        return legs;
+    }
+
+    public int getTails() {
+        return tails;
+    }
+
+    public int getTeeth() {
+        return teeth;
+    }
 }
 
