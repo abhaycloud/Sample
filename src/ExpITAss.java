@@ -8,22 +8,23 @@ public class ExpITAss {
         int occurrence = 0;
         int inputnumber;
         ArrayList<Integer> al = new ArrayList<Integer>();
-
-        System.out.print("Enter number: ");
+        System.out.println("Enter Numbers:");
         do {
-            al.add(input.nextInt());
             inputnumber = input.nextInt();
+
+            al.add(inputnumber);
         } while (inputnumber != 0);
-        for (int number = 0; number <= al.size(); number++) {
-            if (number > largest) {
+
+        for (int counter=0;counter<al.size();counter++) {
+
+            if (al.get(counter) > largest) {
                 occurrence = 0;
-                largest = number;
+                largest = al.get(counter);
             }
-            if (number == largest) {
+            if (al.get(counter) == largest) {
                 occurrence++;
             }
         }
-
         System.out.println("The largest number is " + largest);
         System.out.println("The occurrence count is " + occurrence);
     }
