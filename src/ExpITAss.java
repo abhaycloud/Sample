@@ -1,13 +1,20 @@
+import java.util.ArrayList;
 import java.util.Scanner;
+
 public class ExpITAss {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int largest = 0;
         int occurrence = 0;
-        int number;
+        int inputnumber;
+        ArrayList<Integer> al = new ArrayList<Integer>();
+
         System.out.print("Enter number: ");
         do {
-            number = input.nextInt();
+            al.add(input.nextInt());
+            inputnumber = input.nextInt();
+        } while (inputnumber != 0);
+        for (int number = 0; number <= al.size(); number++) {
             if (number > largest) {
                 occurrence = 0;
                 largest = number;
@@ -15,8 +22,7 @@ public class ExpITAss {
             if (number == largest) {
                 occurrence++;
             }
-
-        } while (number != 0);
+        }
 
         System.out.println("The largest number is " + largest);
         System.out.println("The occurrence count is " + occurrence);
