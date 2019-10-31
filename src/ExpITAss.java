@@ -15,6 +15,19 @@ public class ExpITAss {
             al.add(inputnumber);
         } while (inputnumber != 0);
 
+        //For each
+        for (int num:al
+             ) {
+            if (num > largest) {
+                occurrence = 0;
+                largest = num;
+            }
+            if (num == largest) {
+                occurrence++;
+            }
+
+        }/*
+        //for loop
         for (int counter=0;counter<al.size();counter++) {
 
             if (al.get(counter) > largest) {
@@ -25,6 +38,7 @@ public class ExpITAss {
                 occurrence++;
             }
         }
+*/
         System.out.println("The largest number is " + largest);
         System.out.println("The occurrence count is " + occurrence);
     }
