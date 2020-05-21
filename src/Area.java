@@ -4,7 +4,7 @@ public class Area {
 
     public Area(int radius)
     {
-        this.radius=radius;
+          this.radius=radius;
     }
     public  double circle(int radius)
     {
