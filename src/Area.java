@@ -5,6 +5,8 @@ public class Area {
     public Area(int radius)
     {
         //Sample Radius
+     //Sample Radius
+     
           this.radius=radius;
     }
     public  double circle(int radius)
